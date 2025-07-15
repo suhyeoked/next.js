@@ -1,0 +1,15 @@
+header {
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    align-content: center; 
+}
+
+hr {
+    border: 1px solid #E2E8F0;
+}
+
+header > img {
+    margin-top: 10px;
+    cursor: pointer;
+}

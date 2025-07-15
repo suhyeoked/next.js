@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.phoneButton {
+    display: none;
+}
+.phoneButton > button {
+    width: 56px;
+    height: 56px;
+}
+
+.ToDoInput {
+    width: 100%;
+    margin-top: 20px;
+}
+.Input {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.ToDoInputText { 
+    width: 100%;
+    height: 56px;
+    border-radius: 24px;
+    border: 2px solid #0F172A;
+    box-shadow: 5px 5px #0F172A;
+    margin-right: 30px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'NanumFothica';
+}
+
+.TodoMain {
+    display: flex;
+    width: 80%;
+    margin: 20px auto 0;
+}
+.TodoMain > div > p{
+    font-family: 'HSSantikki' sans-serif;
+}
+
+.Todo > p{
+    background-color: #BEF264;
+    width: 101px;
+    height: 36px;
+    align-content: center; 
+    text-align: center;
+    border-radius: 23px;
+    color: #15803D;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.Done > p {
+    background-color:#15803D;
+    width: 101px;
+    height: 36px;
+    align-content: center; 
+    text-align: center;
+    border-radius: 23px;
+    color: #FCD34D;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.TodoMain > div {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.ToDoCheck > input[type="checkbox"] ,
+.DoneCheck > input[type="checkbox"]  {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;             
+    background-color: #FEFCE8;
+    border: 2px solid #0F172A;
+    cursor: pointer;
+}
+
+
+
+
+.DoneCheck > input[type="checkbox"]:checked {
+    border: none;
+    background-color: #7C3AED;
+}
+
+.ToDoCheck {
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 50px;
+    border: 2px solid #0F172A;    
+    border-radius: 27px;
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+}
+
+.ToDoCheck > p {
+    margin-left: 8px;
+}
+
+.DoneCheck {
+    width: 100%;
+    background-color: #EDE9FE;
+    height: 50px;
+    border: 2px solid #0F172A;    
+    border-radius: 27px;
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+
+}
+
+.DoneCheck > p {
+    margin-left: 8px;
+    text-decoration: line-through;
+}
+
+@media (min-width:1200px) {
+   
+}
+@media (min-width:375px) and (max-width:1199px) {
+    .TodoMain {
+        display: block;
+    }
+    .TodoMain > div {
+        width: 100%;
+    }
+}
+
+@media (max-width:743px) {
+    .ToDoInput {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .Input {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .ToDoInputText { 
+        width: 100%;
+        height: 56px;
+        border-radius: 24px;
+        border: 2px solid #0F172A;
+        box-shadow: 5px 5px #0F172A;
+        margin-right: 30px;
+        padding: 0 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .phoneButton {
+        display: block;
+    }
+    .pcButton {
+        display: none;
+    }
+}
