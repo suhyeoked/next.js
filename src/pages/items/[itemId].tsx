@@ -38,6 +38,7 @@ export default function DetailPages() {
       setPreview(url)
     } else {
       // 선택 취소 시
+      console.log(file)
       setFile(null)
       setPreview(null)
       setError('')
