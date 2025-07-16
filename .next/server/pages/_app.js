@@ -1,5 +1,1 @@
-const CHUNK_PUBLIC_PATH = "server/pages/_app.js";
-const runtime = require("../chunks/ssr/[turbopack]_runtime.js");
-runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__953d6a76._.js");
-runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_app.tsx [ssr] (ecmascript)", CHUNK_PUBLIC_PATH);
-module.exports = runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_app.tsx [ssr] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
+(()=>{var r={};r.id=888,r.ids=[888],r.modules={4807:(r,e,s)=>{"use strict";s.r(e),s.d(e,{default:()=>App});var t=s(997);function App({Component:r,pageProps:e}){return t.jsx(r,{...e})}s(108)},108:()=>{},997:r=>{"use strict";r.exports=require("react/jsx-runtime")}};var e=require("../webpack-runtime.js");e.C(r);var s=e(e.s=4807);module.exports=s})();

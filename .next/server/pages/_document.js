@@ -1,6 +1,1 @@
-const CHUNK_PUBLIC_PATH = "server/pages/_document.js";
-const runtime = require("../chunks/ssr/[turbopack]_runtime.js");
-runtime.loadChunk("server/chunks/ssr/node_modules_bf671b14._.js");
-runtime.loadChunk("server/chunks/ssr/[root-of-the-server]__93ade7bd._.js");
-runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_document.tsx [ssr] (ecmascript)", CHUNK_PUBLIC_PATH);
-module.exports = runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_document.tsx [ssr] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
+"use strict";(()=>{var e={};e.id=660,e.ids=[660],e.modules={5211:(e,r,s)=>{s.r(r),s.d(r,{default:()=>Document});var t=s(997),a=s(6859);function Document(){return(0,t.jsxs)(a.Html,{lang:"en",children:[t.jsx(a.Head,{}),(0,t.jsxs)("body",{className:"antialiased",children:[t.jsx(a.Main,{}),t.jsx(a.NextScript,{})]})]})}},2785:e=>{e.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},6689:e=>{e.exports=require("react")},997:e=>{e.exports=require("react/jsx-runtime")},1017:e=>{e.exports=require("path")}};var r=require("../webpack-runtime.js");r.C(e);var __webpack_exec__=e=>r(r.s=e),s=r.X(0,[859],()=>__webpack_exec__(5211));module.exports=s})();
