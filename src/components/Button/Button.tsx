@@ -1,4 +1,4 @@
-import './style.module.css'
+import styles from './style.module.css'
 
 
 interface ButtonInterface {
@@ -10,7 +10,7 @@ interface ButtonInterface {
 export default function Button({children,onClick}:ButtonInterface){
     return (
         <>
-            <button onClick={onClick}>
+            <button className={styles.button} onClick={onClick}>
                 {children}
             </button>
         </>

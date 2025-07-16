@@ -1,4 +1,4 @@
-import './style.module.css'
+import styles from './style.module.css'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -6,7 +6,7 @@ export default function Header(){
     const router = useRouter()
     return(
         <>
-            <header onClick={()=>{
+            <header className={styles.header} onClick={()=>{
                 router.push('/')
             }}>
                 <Image src="/Logo.png"
