@@ -9,12 +9,12 @@ export default function Header(){
             <header className={styles.header} onClick={()=>{
                 router.push('/')
             }}>
-                <Image src="/Logo.png"
+                <Image className={styles.img} src="/Logo.png"
                 width={150}
                 height={40}
                 alt='Logo' />
             </header>
-            <hr />
+            <hr className={styles.hr} />
 
         </>
     )
