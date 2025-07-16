@@ -1,0 +1,168 @@
+/* [project]/src/pages/style.css [client] (css) */
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+.phoneButton {
+  display: none;
+}
+
+.phoneButton > button {
+  width: 56px;
+  height: 56px;
+}
+
+.ToDoInput {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Input {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.ToDoInputText {
+  border: 2px solid #0f172a;
+  border-radius: 24px;
+  width: 100%;
+  height: 56px;
+  margin-right: 30px;
+  padding: 0 30px;
+  font-family: NanumFothica;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 5px 5px #0f172a;
+}
+
+.TodoMain {
+  width: 80%;
+  margin: 20px auto 0;
+  display: flex;
+}
+
+.TodoMain > div > p {
+  font-family: "HSSantikki" sans-serif;
+}
+
+.Todo > p {
+  text-align: center;
+  color: #15803d;
+  background-color: #bef264;
+  border-radius: 23px;
+  align-content: center;
+  width: 101px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Done > p {
+  text-align: center;
+  color: #fcd34d;
+  background-color: #15803d;
+  border-radius: 23px;
+  align-content: center;
+  width: 101px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.TodoMain > div {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.ToDoCheck > input[type="checkbox"], .DoneCheck > input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: #fefce8;
+  border: 2px solid #0f172a;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.DoneCheck > input[type="checkbox"]:checked {
+  background-color: #7c3aed;
+  border: none;
+}
+
+.ToDoCheck {
+  background-color: #fff;
+  border: 2px solid #0f172a;
+  border-radius: 27px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  display: flex;
+}
+
+.ToDoCheck > p {
+  margin-left: 8px;
+}
+
+.DoneCheck {
+  background-color: #ede9fe;
+  border: 2px solid #0f172a;
+  border-radius: 27px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  display: flex;
+}
+
+.DoneCheck > p {
+  margin-left: 8px;
+  text-decoration: line-through;
+}
+
+@media (width >= 375px) and (width <= 1199px) {
+  .TodoMain {
+    display: block;
+  }
+
+  .TodoMain > div {
+    width: 100%;
+  }
+}
+
+@media (width <= 743px) {
+  .ToDoInput {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Input {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .ToDoInputText {
+    border: 2px solid #0f172a;
+    border-radius: 24px;
+    width: 100%;
+    height: 56px;
+    margin-right: 30px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 5px 5px #0f172a;
+  }
+
+  .phoneButton {
+    display: block;
+  }
+
+  .pcButton {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=src_pages_style_css_2bef753f._.single.css.map*/

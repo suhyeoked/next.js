@@ -1,0 +1,18 @@
+/* [project]/src/components/Header/style.css [client] (css) */
+header {
+  align-content: center;
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+hr {
+  border: 1px solid #e2e8f0;
+}
+
+header > img {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=src_components_Header_style_css_2bef753f._.single.css.map*/
