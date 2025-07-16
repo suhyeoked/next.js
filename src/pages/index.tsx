@@ -2,9 +2,6 @@ import { useRouter } from 'next/router'
 import Button from "@/components/Button/Button";
 import Header from "@/components/Header/Header";
 import './style.css'
-import '@/components/Button/style.module.css'
-import '@/components/Header/style.module.css'
-import '@/pages/items/itemId.css'
 import { useState } from "react";
 
 export default function Home() {
