@@ -1,7 +1,7 @@
 // pages/items/[itemId].tsx
 import { useRouter } from "next/router" 
 import Header from "@/components/Header/Header"
-import './itemId.css'
+// import './itemId.css'
 import { ChangeEvent, useState, useEffect } from "react"
 
 export default function DetailPages() {
