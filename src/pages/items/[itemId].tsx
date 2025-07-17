@@ -1,7 +1,7 @@
 // pages/items/[itemId].tsx
 import { useRouter } from "next/router" 
 import Header from "@/components/Header/Header"
-// import './itemId.css'
+import styles from "./itemId.module.css"
 import { ChangeEvent, useState, useEffect } from "react"
 
 export default function DetailPages() {
@@ -56,25 +56,25 @@ export default function DetailPages() {
     <>
       <Header />
 
-      <div className="ToDoTitle">
+      <div className={styles.ToDoTitle}>
         <input type="checkbox" id={`checkbox-${itemId}`} />
         <label htmlFor={`checkbox-${itemId}`}>
           <p>{decodeURIComponent(itemId)}</p>
         </label>
       </div>
 
-      <div className="ToDoDetailPages">
-        <div className="ToDoDetailInput">
-          <div className="ToDoTitleInputImage">
+      <div className={styles.ToDoDetailPages}>
+        <div className={styles.ToDoDetailInput}>
+          <div className={styles.ToDoTitleInputImage}>
             {preview
                 ? <img src={preview} alt="미리보기" className="preview-img" />
                 : ''}
-            <label htmlFor="input-file" className="ToDoTitleInputImageAdd">
+            <label htmlFor="input-file" className={styles.ToDoTitleInputImageAdd}>
               +
             </label>
             <input
               id="input-file"
-              className="ToDoTitleInputImageAddInput"
+              className={styles.ToDoTitleInputImageAddInput}
               type="file"
               accept="image/*"
               onChange={handleFile}
@@ -83,7 +83,7 @@ export default function DetailPages() {
             {error && <div className="file-error">⚠️ {error}</div>}
           </div>
 
-          <div className="ToDoTitleMemo">
+          <div className={styles.ToDoTitleMemo}>
             <p>Memo</p>
             <input
               type="text"
@@ -93,9 +93,9 @@ export default function DetailPages() {
         </div>
       </div>
 
-      <div className="ToDoTitleButton">
-        <button className="CorrectionButton">✔ 수정 완료</button>
-        <button className="DeleteButton">X 삭제하기</button>
+      <div className={styles.ToDoTitleButton}>
+        <button className={styles.CorrectionButton}>✔ 수정 완료</button>
+        <button className={styles.DeleteButton}>X 삭제하기</button>
       </div>
     </>
   )
